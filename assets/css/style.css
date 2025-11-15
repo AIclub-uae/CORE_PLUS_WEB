@@ -1,0 +1,108 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+  color: #333;
+}
+header {
+  background-color: #022952;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+ 
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  
+}
+
+.hero .btn {
+  background-color: #00a859;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+
+.board-bg {
+  background-color: #007bff; /* Bootstrap blue tone */
+  height: 50vh; /* 50% of viewport height */
+  display: flex;
+  align-items: center; /* center the carousel vertically if smaller */
+  justify-content: center; /* center it horizontally */
+  padding: 10px;
+  border-radius: 8px; /* optional for rounded corners */
+}
+.carousel-inner .carousel-item img {
+  width: 100%;           /* Makes image fill the slide’s width */
+  height: 300px;         /* Fixed height for consistency across slides */
+  object-fit: cover;     /* Ensures images cover the area and crop if necessary */
+  border-radius: 8px;    /* Optional for slightly rounded image corners */
+  background: #8a1414;      /* Optional, looks better if image has transparency */
+}
+
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.light-bg {
+  background-color: #f9f9f9;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+footer {
+  background-color: #004b9a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  z-index: 999;
+}
