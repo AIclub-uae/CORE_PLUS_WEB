@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CorePlus</title>
+  <link rel="icon" type="image/png" href="assets/img/logo_white_text.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -65,6 +68,12 @@
   height: 40px;
   }
   
+  .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* Semi-bold like your logo */
+    letter-spacing: 2px;
+}
+
 
 
   </style>
@@ -75,9 +84,10 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#home">CORE PLUS</a>
+    <!-- <a class="navbar-brand fw-bold" href="#home">CORE PLUS</a>--> 
+      <a class="navbar-brand" href="#">| CORE PLUS |<sub>Business Set Up Services</sub></a>
       <a href="#" class="navbar-logo">
-    <img src="assets/img/logo.png" alt="Logo"/> </a>
+    <!--<img src="assets/img/logo.png" alt="Logo"/>--> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -91,8 +101,38 @@
       </div>
     </div>
   </nav>
+<div class="top-info-bar bg-light text-dark py-2 shadow-sm">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
+    
+    <!-- Location -->
+    <div class="d-flex align-items-center mb-2 mb-md-0">
+      <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+      <span>Office #15, Al Kifaf Building, Karama, Dubai</span>
+    </div>
+
+    <!-- Phone -->
+    <div class="d-flex align-items-center">
+      <i class="bi bi-telephone-fill text-primary me-2"></i>
+      <a href="tel:+971123456789" class="text-dark text-decoration-none fw-semibold">
+        +971 50 123 4567
+      </a>
+    </div>
+
+  </div>
+</div>
+
 
 <style>
+.top-info-bar {
+  margin-top: 56px; /* Adjust if your navbar height is different */
+  z-index: 1020;
+}
+
+@media (max-width: 768px) {
+  .top-info-bar {
+    text-align: center;
+  }
+}
 
 .hero-section {
   background: url('assets/img/hero_bg_1.png') center center / cover no-repeat;
@@ -137,7 +177,9 @@
   }
 }
 
+
 </style>
+
 <!-- HERO SECTION -->
 <section id="hero" class="hero-section d-flex align-items-center justify-content-center text-center text-white">
   <div class="container">
@@ -237,9 +279,8 @@
 
 
 <!--------------------------------------------dvdvdvdfvdvdvd-->
-      <a href="#services" class="btn btn-primary btn-lg me-2"><i class="bi bi-arrow-down-circle"></i> Explore Services</a>
-    <a href="#services" class="btn btn-primary btn-lg me-2"><i class="bi bi-briefcase"></i> Explore Services</a>
-    <a href="#Conatct" class="btn btn-primary btn-lg me-2"><i class="bi bi-geo-alt"></i> Explore Services</a>
+    <a href="#services" class="btn btn-lg me-2"><i class="bi bi-fingerprint"></i><br> Explore Services</a>
+  
    
   </div>
 </section>
@@ -322,7 +363,7 @@
 
   <!-- SERVICES -->
  
-<section id="services" class="py-5">
+<section id="services " class="py-5" style="background:linear-gradient(#939496);">
   <div class="container text-center">
     <h2 class="fw-bold mb-5 text-primary">Our Services</h2>
     <div class="row g-4">
@@ -353,7 +394,7 @@
             <p class="card-text">
               We assist in all types of UAE visa applications including: Golden Visa, Employment Visa, Residence Visa, Freelance Visa, Family Visa, and Investor Visa — with full documentation and approval support.
             </p>
-               <a href="#visa-processing" class="btn btn-lg me-2"><i class="bi bi-geo-alt"></i> Lock Inside</a>
+               <a href="#visa-processing" class="btn btn-lg me-2"><i class="bi bi-geo-alt"></i>Explore Now !</a>
           </div>
         </div>
       </div>
@@ -369,7 +410,7 @@
               From trade license application and renewal to notarization, attestation, and establishment card services, we handle every step of your business setup.
               Also offering: Emirates ID Typing, Medical Typing, Equivalency, Corporate & Trade License Renewal, Tasheel, Amer, and Government Approvals.
             </p>
-              <a href="#company-formation" class="btn btn-lg me-2"><i class="bi bi-geo-alt"></i> Lock Inside</a>
+              <a href="#company-formation" class="btn btn-lg me-2"><i class="bi bi-geo-alt"></i> Explore Now !</a>
           </div>
         </div>
       </div>
@@ -384,7 +425,7 @@
             <p class="card-text">
               We provide international visa support for major destinations including Schengen countries, USA, UK, Canada, Australia, New Zealand, Ireland, Turkey, Japan, Korea, Thailand, Malaysia, Singapore, China, and Brazil.
             </p>
-            <a href="#global-visa" class="btn btn-lg me-2"><i class="bi bi-geo-alt"></i> Lock Inside</a>
+            <a href="#global-visa" class="btn btn-lg me-2"><i class="bi bi-geo-alt"></i> Explore Now !</a>
           </div>
         </div>
       </div>
@@ -407,9 +448,8 @@
                 Our expertise also covers <strong>Document Clearing</strong>, <strong>Typing & Translation</strong>, <strong>Emirates ID & Medical Typing</strong>, 
                 <strong>Trade Name & License Renewal</strong>, <strong>Tourist & Visit Visa Processing</strong>, and <strong>Business Consultancy</strong>.
                   From paperwork to government approvals, we handle every detail so you can focus on growing your business with confidence.
-                  <a href="#services" class="text-warning fw-bold text-decoration-none">View All Services →</a>
-                </p>
-            <a href="#global-visa" class="btn btn-lg me-2"><i class="bi bi-geo-alt"></i> Lock Inside</a>
+                              </p>
+            <a href="#global-visa" class="btn btn-lg me-2"><i class="bi bi-geo-alt"></i> Explore Now ! </a>
           </div>
         </div>
       </div>
@@ -422,6 +462,12 @@
 
 <!-- ✨ CSS -->
 <style>
+ #pro-services {
+  background-image: linear-gradient(90deg,#fbfdff,#939496);
+  padding:auto;
+}
+
+
 .service-card {
   background-size: cover;
   background-position: center;
@@ -464,8 +510,8 @@
 <section id="pro-services" class="py-5">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="fw-bold text-primary">PRO Services</h2>
-      <p class="lead text-muted">
+      <h2 class="fw-bold text-primary"> PRO Services</h2>
+      <p class="lead text-muted fw-bold">
         Professional handling of government-related documentation, approvals, and legal processes on behalf of companies or individuals in the UAE.
       </p>
     </div>
@@ -526,6 +572,17 @@
     </div>
   </div>
 </section>
+
+<style>
+#visa-processing
+{
+
+  background: linear-gradient(135deg,#939496,#fbfdff);
+  background-attachment: fixed;
+  color: #fff; /* optional: better readability */
+  padding: auto;
+}
+</style>
 <!-- VISA PROCESSING DETAILED SECTION -->
 <section id="visa-processing" class="py-5 bg-light">
   <div class="container">
@@ -565,7 +622,17 @@
     </div>
   </div>
 </section>
+<style>
+#global-visa
+{
 
+  background-image: linear-gradient(90deg,#fbfdff,#939496);
+  padding:auto;
+
+  color: #464242; /* optional: better readability */
+  padding: auto;
+}
+</style>
 
 
 
@@ -611,13 +678,23 @@
           Whether for <strong>business meetings, exhibitions, or leisure travel</strong>, Core Plus ensures your visa application is handled efficiently — so you can focus on your journey.
         </p>
 
-        <a href="#contact" class="btn btn-primary mt-3 px-4 py-2 rounded-pill">
+        <a href="#contact" class="btn btn-outline-primary mt-3 px-4 py-2 rounded-pill">
           Get Visa Assistance
         </a>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+#company-formation
+{
+ background: linear-gradient(135deg,#939496,#fbfdff);
+  background-attachment: fixed;
+  color: #585252; /* optional: better readability */
+  padding: auto;
+}
+</style>
 
 <!-- Company formation-->
 <section id="company-formation" class="py-5">
@@ -674,228 +751,7 @@
   </div>
 </section>
 
-
-<!-- OTHER COREPLUS SERVICES 
-
 <style>
-  .fade-up {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 1s ease-out forwards;
-  }
-
-  @keyframes fadeUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>
-
-
-
-<section id="other-services" class="py-20 bg-gradient-to-b from-blue-50 to-white text-center">
-  <div class="container mx-auto px-6 mb-16">
-    <h2 class="text-4xl font-extrabold text-blue-800 mb-4 tracking-wide">
-      Other <span class="text-blue-600">CorePlus</span> Services
-    </h2>
-    <p class="text-gray-600 max-w-2xl mx-auto">
-      From Emirates ID typing to trade license renewals, CorePlus offers comprehensive business support solutions — 
-      all managed with precision, speed, and trust.
-    </p>
-  </div>
-</section>
-
-<section class="relative overflow-hidden py-20 bg-gradient-to-r from-white via-blue-50 to-white">
-  <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-    <!-- LEFT (Text Section) 
-    <div class="fade-up">
-      <h2 class="text-3xl font-bold text-blue-800 mb-4">Emirates ID Typing</h2>
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        Fast and accurate Emirates ID typing services for individuals and companies.
-        Our trained team ensures all applications are filled correctly, minimizing delays and rejections.
-      </p>
-      <ul class="list-disc list-inside text-gray-600 mb-6 space-y-1">
-        <li>New Emirates ID application</li>
-        <li>Renewal and replacement</li>
-        <li>Data update and form submission</li>
-      </ul>
-      <a href="#contact"
-        class="inline-block bg-gradient-to-r from-blue-700 to-blue-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300">
-        Get ID Support
-      </a>
-    </div>
-    <!-- RIGHT (Image Section) 
-    <div class="relative text-center">
-      <div class="absolute inset-0 bg-gradient-to-l from-blue-200/30 to-transparent rounded-3xl"></div>
-      <img src="images/emirates-id.jpg" alt="Emirates ID Typing"
-        class="rounded-3xl shadow-xl w-full max-w-md mx-auto transform hover:scale-105 transition-transform duration-500">
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-<!-- EMIRATES ID TYPING 
-<section id="emirates-id" class="py-16 bg-white">
-  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <h2 class="text-3xl font-bold text-blue-700 mb-4">Emirates ID Typing</h2>
-      <p class="text-gray-600 mb-6">
-        Fast and accurate Emirates ID typing services for individuals and companies. 
-        Our trained team ensures all applications are filled correctly, minimizing delays and rejections.
-      </p>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-        <li>New Emirates ID application</li>
-        <li>Renewal and replacement</li>
-        <li>Data update and form submission</li>
-      </ul>
-      <a href="#contact" class="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition">Get ID Support</a>
-    </div>
-    <div class="text-center">
-      <img src="images/emirates-id.jpg" alt="Emirates ID Typing" class="rounded-2xl shadow-lg w-full max-w-md mx-auto">
-    </div>
-  </div>
-</section>
-
-<!-- MEDICAL TYPING 
-<section id="medical-typing" class="py-16 bg-gray-50">
-  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-    <div class="text-center order-2 md:order-1">
-      <img src="images/medical-typing.jpg" alt="Medical Typing" class="rounded-2xl shadow-lg w-full max-w-md mx-auto">
-    </div>
-    <div class="order-1 md:order-2">
-      <h2 class="text-3xl font-bold text-blue-700 mb-4">Medical Typing</h2>
-      <p class="text-gray-600 mb-6">
-        We provide complete typing services for medical tests and fitness certificates 
-        required for visa and employment processing. Quick, accurate, and government-compliant.
-      </p>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-        <li>Pre-employment and residence visa typing</li>
-        <li>Medical test appointments</li>
-        <li>Result tracking and follow-up</li>
-      </ul>
-      <a href="#contact" class="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition">Book Now</a>
-    </div>
-  </div>
-</section>
-
-<!-- EQUIVALENCY SERVICES 
-<section id="equivalency" class="py-16 bg-white">
-  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <h2 class="text-3xl font-bold text-blue-700 mb-4">Educational Equivalency</h2>
-      <p class="text-gray-600 mb-6">
-        Get your international academic qualifications officially recognized by UAE authorities. 
-        We handle all document attestation, translation, and MOE submissions.
-      </p>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-        <li>Certificate attestation & verification</li>
-        <li>MOE application & tracking</li>
-        <li>Translation and notarization support</li>
-      </ul>
-      <a href="#contact" class="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition">Get Equivalency Help</a>
-    </div>
-    <div class="text-center">
-      <img src="images/equivalency.jpg" alt="Equivalency" class="rounded-2xl shadow-lg w-full max-w-md mx-auto">
-    </div>
-  </div>
-</section>
-
-<!-- CORPORATE & TRADE LICENSE RENEWAL 
-<section id="license-renewal" class="py-16 bg-gray-50">
-  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-    <div class="text-center order-2 md:order-1">
-      <img src="images/license-renewal.jpg" alt="Trade License Renewal" class="rounded-2xl shadow-lg w-full max-w-md mx-auto">
-    </div>
-    <div class="order-1 md:order-2">
-      <h2 class="text-3xl font-bold text-blue-700 mb-4">Corporate & Trade License Renewal</h2>
-      <p class="text-gray-600 mb-6">
-        Avoid penalties and interruptions. Core Plus ensures your trade licenses are renewed on time 
-        and all related government obligations are cleared seamlessly.
-      </p>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-        <li>DED license renewal</li>
-        <li>Activity modification & amendments</li>
-        <li>Establishment card renewal</li>
-      </ul>
-      <a href="#contact" class="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition">Renew License</a>
-    </div>
-  </div>
-</section>
-
-<!-- TASHEEL SERVICES
-<section id="tasheel" class="py-16 bg-white">
-  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <h2 class="text-3xl font-bold text-blue-700 mb-4">Tasheel Services</h2>
-      <p class="text-gray-600 mb-6">
-        We manage all Tasheel-related services including labor contracts, renewals, and document submissions 
-        through official MOHRE channels — fast and reliable.
-      </p>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-        <li>Labour contract typing</li>
-        <li>Quota & WPS registration</li>
-        <li>Permit issuance & cancellation</li>
-      </ul>
-      <a href="#contact" class="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition">Contact Tasheel Desk</a>
-    </div>
-    <div class="text-center">
-      <img src="images/tasheel.jpg" alt="Tasheel Services" class="rounded-2xl shadow-lg w-full max-w-md mx-auto">
-    </div>
-  </div>
-</section>
-
-<!-- AMER SERVICES 
-<section id="amer" class="py-16 bg-gray-50">
-  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-    <div class="text-center order-2 md:order-1">
-      <img src="images/amer-services.jpg" alt="Amer Services" class="rounded-2xl shadow-lg w-full max-w-md mx-auto">
-    </div>
-    <div class="order-1 md:order-2">
-      <h2 class="text-3xl font-bold text-blue-700 mb-4">Amer Services</h2>
-      <p class="text-gray-600 mb-6">
-        Simplify your immigration and residency procedures with our Amer Center services — 
-        visa renewals, status updates, Emirates ID, and more, handled efficiently.
-      </p>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-        <li>Visa renewal and cancellation</li>
-        <li>Residency status modification</li>
-        <li>Emirates ID typing and renewal</li>
-      </ul>
-      <a href="#contact" class="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition">Talk to Amer Expert</a>
-    </div>
-  </div>
-</section>
-
-<!-- GOVERNMENT APPROVALS 
-<section id="gov-approvals" class="py-16 bg-white">
-  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <h2 class="text-3xl font-bold text-blue-700 mb-4">Government Approvals</h2>
-      <p class="text-gray-600 mb-6">
-        We assist with obtaining approvals from various UAE government authorities 
-        required for trade licenses, specialized business activities, and regulatory compliance.
-      </p>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-        <li>DED, Municipality & Chamber approvals</li>
-        <li>Economic Department NOCs</li>
-        <li>Customs & port authority permissions</li>
-      </ul>
-      <a href="#contact" class="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition">Get Assistance</a>
-    </div>
-    <div class="text-center">
-      <img src="images/gov-approvals.jpg" alt="Government Approvals" class="rounded-2xl shadow-lg w-full max-w-md mx-auto">
-    </div>
-  </div>
-</section>
--->
-
-<style>
-
 
 #other_serives{
    background: linear-gradient(135deg, #373838 0%, #3b3b3b 100%);
@@ -1313,51 +1169,6 @@ background-color: hwb(60 78% 21%);
 </style>
 
 
-
-
-    <!-- OPTIONAL: CLIENT TESTIMONIAL 
-    <div class="mt-16 max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-md">
-      <p class="text-gray-700 italic mb-4">
-        “Core Plus handled all our visa processing and company renewal tasks efficiently and professionally. 
-        Their PRO team truly makes government work easy and stress-free.”
-      </p>
-      <h4 class="text-blue-700 font-semibold">— HR Manager, Atlantis The Palm</h4>
-    </div>
-  </div>
-</section>-->
-
-<!-- ANIMATED COUNTERS SECTION 
-<section id="stats" class="py-20 bg-blue-700 text-gray-600">
-  
-<div class="row text-center py-5" >
-  <div class="col-sm-4">
-    <div class="card bg-warning mb-3">
-      <div class="card-body">
-        <h1 class="text-6xl font-extrabold mb-2 counter" data-target="100">0</h1>
-      <p class="text-lg">Satisfied Customers</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card bg-warning mb-3">
-      <div class="card-body">
-        <h1 class="text-6xl font-extrabold mb-2 counter" data-target="1000">0</h1>
-      <p class="text-lg">Visa Processed</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card bg-warning mb-3">
-      <div class="card-body">
-        <h1 class="text-6xl font-extrabold mb-2 counter" data-target="100">0</h1>
-      <p class="text-lg">Partner Companies</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</section>-->
-
 <Style>
 
 #Counter_clients {
@@ -1388,13 +1199,7 @@ background-color: hwb(60 78% 21%);
   margin: 40px auto;
 }
 
-
-
-
-
 </style>
-
-
 <section id="Counter_clients">
   
     <div class="row">
@@ -1541,112 +1346,6 @@ background-color: hwb(60 78% 21%);
   })();
 </script>
 
-
-
-<!-- 🌟 CLIENT LOGO CAROUSEL (Uniform Size) 
-<section id="clients" class="bg-white py-16">
-  <div class="text-center mb-10">
-    <h2 class="text-3xl font-bold text-blue-700">Our Valued Clients</h2>
-    <p class="text-gray-600 mt-2">Trusted by leading companies across the UAE and beyond</p>
-  </div>
-
-  <div class="overflow-hidden relative">
-    <!-- Animation wrapper 
-    <div class="flex items-center gap-10 animate-scroll">
-      
-      <!-- Each logo card 
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_1.jpg" alt="Client 1" class="logo-img" />
-      </div>
-
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_2.jpg" alt="Client 2" class="logo-img" />
-      </div>
-
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_3.jpg" alt="Client 3" class="logo-img" />
-      </div>
-
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_4.jpg" alt="Client 4" class="logo-img" />
-      </div>
-
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_5.jpg" alt="Client 5" class="logo-img" />
-      </div>
-
-      <!-- Duplicate logos for seamless loop 
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_6.jpg" alt="Client 1" class="logo-img" />
-      </div>
-
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_7.jpg" alt="Client 2" class="logo-img" />
-      </div>
-
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_8.jpg" alt="Client 3" class="logo-img" />
-      </div>
-
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_9.jpg" alt="Client 1" class="logo-img" />
-      </div>
-
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_10.jpg" alt="Client 2" class="logo-img" />
-      </div>
-
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_11.jpg" alt="Client 3" class="logo-img" />
-      </div>
-      <div class="logo-card">
-        <img src="assets/img/clients_logo/client_12.jpg" alt="Client 3" class="logo-img" />
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ✨ Styles 
-<style>
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.animate-scroll {
-  display: flex;
-  width: max-content;
-  animation: scroll 25s linear infinite;
-}
-
-/* ✅ Make all logo containers equal size */
-.logo-card {
-  flex-shrink: 0;
-  width: 160px;        /* consistent width */
-  height: 100px;       /* consistent height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f9fafb; /* soft gray background */
-  border-radius: 0.75rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  padding: 1rem;
-}
-
-/* ✅ Make logos fit properly inside without stretching */
-.logo-img {
-  max-height: 60px;     /* all logos same height */
-  max-width: 120px;     /* limit overly wide logos */
-  object-fit: contain;  /* keeps logo proportions */
-  filter: grayscale(1);
-  transition: all 0.3s ease-in-out;
-}
-.logo-img:hover {
-  filter: grayscale(0);
-  transform: scale(1.05);
-}
-</style>-->
 <style>
   .object-cover {
     object-fit: cover;
@@ -1665,23 +1364,28 @@ background-color: hwb(60 78% 21%);
           <p class="text-gray-600 mb-4">We’re here to assist you with all your PRO, visa, and business setup services. Visit us or get in touch for personalized support.</p>
           <ul class="list-unstyled text-gray-700">
             <li class="mb-3"><i class="bi bi-geo-alt-fill text-blue-700 me-2"></i>Matar Karama Building - Shop No 1 - behind ansar Gallery - Al Karama - Dubai, UAE</li>
-            <li class="mb-3"><i class="bi bi-telephone-fill text-blue-700 me-2"></i>+971 50 414 5594</li>
-            <li class="mb-3"><i class="bi bi-envelope-fill text-blue-700 me-2"></i>info@coreplus.ae</li>
+            <li class="mb-3"><i class="bi bi-telephone-fill text-blue-700 me-2"></i>+971 4329 6602</li>
+            <li class="mb-3"><i class="bi bi-phone-fill text-blue-700 me-2"></i>+971 50 414 5594</li>
             <li><i class="bi bi-clock-fill text-blue-700 me-2"></i>Mon - Sat: 9:00 AM – 6:00 PM</li>
           </ul>
+           <img src="assets/img/GD.jpg" alt="CorePlus Office" class="rounded-2xl shadow-lg w-100 object-cover">
         </div>
       </div>
 
       <!-- Office Image -->
-      <div class="col-md-6">
-        <img src="assets/img/office building.jpg" alt="CorePlus Office" class="rounded-2xl shadow-lg w-100 object-cover">
+      <div class="col-md-6 py-5">
+           <video class="rounded shadow mx-auto d-block w-100" autoplay muted loop playsinline>
+                <source src="assets/img/office_inside.mp4"type="video/mp4" >
+                 Your browser does not support the video tag.
+             </video>
+       
       </div>
     </div>
 
     <!-- ROW 2: MAP -->
     <div class="mb-16">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.856330325952!2d55.27078281500366!3d25.20484998388321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434ddf2b79b1%3A0x9b2c07f8c96df7ff!2sSheikh%20Zayed%20Road%2C%20Dubai!5e0!3m2!1sen!2sae!4v1701234567890!5m2!1sen!2sae"
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.915448616873!2d55.30547741500285!3d25.2509324838831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43424b6fbc71%3A0x530dce3ba8babbad!2sCORE%20PLUS%20BUSINESS%20SET%20UP%20SERVICES%20L%20L%20C!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
         width="100%" height="400" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy">
       </iframe>
     </div>
@@ -1719,71 +1423,14 @@ background-color: hwb(60 78% 21%);
   </div>
 </section>
 
-
-
-
-
-
-
-
-<!-- COUNTER ANIMATION SCRIPT -->
-
-
-
-  <!-- CONTACT 
-  <section id="contact" class="py-5">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Contact Us</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6 text-start">
-          <p><i class="bi bi-telephone-fill text-primary"></i> <strong>Phone:</strong> +971 5X XXX XXXX</p>
-          <p><i class="bi bi-envelope-fill text-primary"></i> <strong>Email:</strong> info@cpcoretyping.ae</p>
-          <p><i class="bi bi-geo-alt-fill text-primary"></i> <strong>Address:</strong> Dubai, United Arab Emirates</p>
-
-          <form class="mt-4">
-            <div class="mb-3">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-   MAP 
-  <div class="container-fluid px-0">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1763179178027!2d55.2707824!3d25.2048493"
-      width="100%"
-      height="300"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy">
-    </iframe>
-  </div>
--->  
-
-
-
-
-  <!-- FOOTER -->
+  <!-- FOOTER 
   <footer>
     <p class="mb-0">© 2025 CP Core Typing Center. All rights reserved.</p>
-  </footer>
+  </footer> -->
 
   <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/9715XXXXXXXXX" class="whatsapp-float" target="_blank">
-    <img src="assets/images/whatsapp.png" alt="WhatsApp">
+  <a href="https://wa.me/971504145594" class="whatsapp-float" target="_blank">
+    <img src="assets/img/WhatsApp.svg.webp" alt="WhatsApp">
   </a>
 
   <!-- Bootstrap JS -->
@@ -1815,4 +1462,70 @@ background-color: hwb(60 78% 21%);
 
 
 </body>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- About Section -->
+      <div class="col-md-4">
+        <h5 class="fw-bold">CORE PLUS</h5>
+        <p class="small text-light">
+          Your trusted partner for Business Setup, PRO Services, Visa Processing,
+          Emirates ID Typing, and Government Approvals in the UAE.  
+          We simplify your corporate journey with reliability and speed.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2">
+        <h6 class="fw-bold">Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+          <li><a href="#services" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-md-3">
+        <h6 class="fw-bold">Our Services</h6>
+        <ul class="list-unstyled small">
+          <li>PRO Services</li>
+          <li>Visa Processing</li>
+          <li>Company Formation</li>
+          <li>Emirates ID Typing</li>
+          <li>Global Visa Assistance</li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3">
+        <h6 class="fw-bold">Contact Us</h6>
+        <p class="small mb-1"><i class="bi bi-geo-alt-fill text-warning"></i> Al Karama, Dubai, UAE</p>
+        <p class="small mb-1"><i class="bi bi-telephone-fill text-warning"></i> +971 50 123 4567</p>
+        <p class="small"><i class="bi bi-envelope-fill text-warning"></i> info@coreplusuae.com</p>
+
+        <!-- Social Icons -->
+        <div class="mt-3">
+          <a href="#" class="text-light me-3 fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-light fs-5"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-light mt-4 mb-2">
+
+    <!-- Copyright -->
+    <div class="text-center small">
+      © 2025 CORE PLUS Business Setup Services — All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
 </html>
